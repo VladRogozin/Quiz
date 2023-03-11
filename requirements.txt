@@ -1,0 +1,4 @@
+crispy-bootstrap5
+django
+Pillow
+python-dotenv
