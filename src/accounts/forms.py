@@ -79,3 +79,12 @@ class UserUpdateForm(UserChangeForm):
         )
 
         # widgets = {'birthday': forms.DateInput(attrs={'type': 'date'})}
+
+
+class UserAgainForm(forms.ModelForm):
+
+    class Meta:
+        model = get_user_model()
+        fields = (
+            'email',
+        )

@@ -4,14 +4,15 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.views import LogoutView
 from django.core.signing import BadSignature
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, redirect
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView
 from django.views.generic import UpdateView
 
-from .forms import UserRegisterForm, UserUpdateForm
-from .utils import signer
+from .forms import UserRegisterForm, UserUpdateForm, UserAgainForm
+from .models import User
+from .utils import signer, send_activation_notification
 
 
 class UserRegisterView(CreateView):
@@ -19,6 +20,24 @@ class UserRegisterView(CreateView):
     template_name = 'accounts/user_register.html'
     success_url = reverse_lazy('accounts:register_done')
     form_class = UserRegisterForm
+
+
+def send_again(request):
+    if request.method == 'POST':
+        form = UserAgainForm(request.POST)
+        if form.is_valid():
+            email = form.cleaned_data['email']
+            try:
+                user = User.objects.get(email=email)
+                send_activation_notification(user)
+                return render(request, 'accounts/user_register_done.html')
+            except User.DoesNotExist:
+                return render(request, 'accounts/Again.html', {'form': form})
+
+    else:
+        form = UserAgainForm()
+
+    return render(request, 'accounts/Again.html', {'form': form})
 
 
 def user_activate(request, sign):
