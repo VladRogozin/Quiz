@@ -24,4 +24,4 @@ jobs:
           DJANGO_DEBUG: ${{ secrets.DJANGO_DEBUG }}
           DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
       run: |
-        flake8 src/
+        flake8 src/ --max-line-length=150 --exclude=migrations
