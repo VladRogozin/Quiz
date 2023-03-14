@@ -1,9 +1,9 @@
+from accounts.models import User
+
 from django.core.signing import Signer
 from django.test import Client
 from django.test import TestCase
 from django.urls import reverse
-
-from accounts.models import User
 
 
 class TestViews(TestCase):

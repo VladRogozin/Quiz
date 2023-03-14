@@ -1,6 +1,6 @@
-from django.test import TestCase
-
 from accounts.forms import UserRegisterForm
+
+from django.test import TestCase
 
 
 class TestForms(TestCase):
