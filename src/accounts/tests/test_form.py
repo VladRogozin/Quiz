@@ -1,4 +1,4 @@
-from accounts.forms import UserRegisterForm
+from src.accounts.forms import UserRegisterForm
 
 from django.test import TestCase
 

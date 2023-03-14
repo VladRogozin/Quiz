@@ -1,4 +1,4 @@
-from accounts.models import User
+from src.accounts.models import User
 
 from django.core.signing import Signer
 from django.test import Client
