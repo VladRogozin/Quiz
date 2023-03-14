@@ -1,6 +1,6 @@
-from accounts.views import UserRegisterView
-from accounts.views import UserLogoutView
 from accounts.views import UserLoginView
+from accounts.views import UserLogoutView
+from accounts.views import UserRegisterView
 from accounts.views import user_activate
 from accounts.views import user_profile_view
 
