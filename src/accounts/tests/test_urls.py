@@ -3,9 +3,7 @@ from django.urls import resolve
 from django.urls import reverse
 
 from src.accounts.views import UserRegisterView
-
 from src.accounts.views import user_activate
-
 from src.accounts.views import user_profile_view
 
 
@@ -21,4 +19,3 @@ class TestUrls(SimpleTestCase):
     def test_activate_user_url_resolves(self):
         url = reverse('accounts:register_activate', kwargs={'sign': 'ewsad'})
         self.assertEqual(resolve(url).func, user_activate)
-
