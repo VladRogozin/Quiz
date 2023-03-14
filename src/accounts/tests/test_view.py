@@ -58,3 +58,8 @@ class TestViews(TestCase):
         user.refresh_from_db()
         self.assertTrue(user.is_active)
         self.assertTrue(user.is_activated)
+
+    def test_random_view_valid(self):
+        """Homework test"""
+        response = self.client.get(reverse('accounts:register'))
+        self.assertEqual(response.status_code, 200)

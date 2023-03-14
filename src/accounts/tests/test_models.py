@@ -32,3 +32,9 @@ class TestModels(TestCase):
 
     def test_convert_user_to_str(self):
         self.assertEqual(str(self.user), self.username)
+
+    def test_birthday_models(self):
+        """Homework test"""
+        meta = self.user._meta.get_field('birthday')
+        self.assertTrue(meta.null)
+        self.assertTrue(meta.blank)

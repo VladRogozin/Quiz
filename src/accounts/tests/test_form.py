@@ -25,3 +25,15 @@ class TestForms(TestCase):
         form = UserRegisterForm(data={})
         self.assertFalse(form.is_valid())
         self.assertEqual(len(form.errors), 4)
+
+    def test_register_form_email_valid(self):
+        """Homework test"""
+        form = UserRegisterForm(
+            data={
+                'username': self.username,
+                'email': 'user_1test.com',
+                'password1': self.password,
+                'password2': self.password
+            }
+        )
+        self.assertEqual(len(form.errors), 1)
