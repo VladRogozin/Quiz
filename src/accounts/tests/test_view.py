@@ -3,7 +3,7 @@ from django.test import Client
 from django.test import TestCase
 from django.urls import reverse
 
-from src.accounts.models import User
+from accounts.models import User
 
 
 class TestViews(TestCase):
