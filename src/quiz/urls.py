@@ -2,10 +2,10 @@ from django.urls import path
 
 from .views import ExamDetailView
 from .views import ExamListView
-from .views import ExamResultDetailView
 from .views import ExamResultCreateView
-from .views import ExamResultUpdateView
+from .views import ExamResultDetailView
 from .views import ExamResultQuestionView
+from .views import ExamResultUpdateView
 
 app_name = 'quiz'
 
