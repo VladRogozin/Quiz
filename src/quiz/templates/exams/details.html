@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Details of exam
+{% endblock %}
+
+{% block header %}
+    Exam: {{ exam.title }}
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <td>Description</td>
+                            <td>{{ exam.description }}</td>
+                        </tr>
+                        <tr>
+                            <td>Count of questions</td>
+                            <td>{{ exam.questions.count }}</td>
+                        </tr>
+                        <tr>
+                            <td>Count of runs</td>
+                            <td>{{ exam.results.count }}</td>
+                        </tr>
+                        <tr>
+                            <td>The best result</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>The best user</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>Last run</td>
+                            <td>N/A</td>
+                        </tr>
+                    </tbody>
+              </table>
+            </div>
+        </div>
+        <div class="row">
+            <form method="post"
+                  class="d-flex justify-content-center mt-5 mb-2"
+                  action="{% url 'quiz:result_create' exam.uuid %}">
+                {% csrf_token %}
+                <input class="btn btn-outline-success m-3" type="submit" value="START">
+                <a class="btn btn-outline-primary m-3" href="{% url 'quiz:list' %}">Back to list</a>
+            </form>
+        </div>
+    </div>
+{% endblock %}
