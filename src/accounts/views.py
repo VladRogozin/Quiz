@@ -10,11 +10,12 @@ from django.urls import reverse_lazy
 from django.views.generic import CreateView
 from django.views.generic import UpdateView
 
-from .forms import UserUpdateForm
-from .forms import UserRegisterForm
 from .forms import UserAgainForm
+from .forms import UserRegisterForm
+from .forms import UserUpdateForm
 from .models import User
-from .utils import signer, send_activation_notification
+from .utils import send_activation_notification
+from .utils import signer
 
 
 class UserRegisterView(CreateView):
