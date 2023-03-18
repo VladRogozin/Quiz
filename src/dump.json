@@ -1,0 +1,896 @@
+[
+{
+   "model": "quiz.exam",
+   "pk": 3,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:27:07.712Z",
+      "update_timestamp": "2023-03-18T14:28:07.512Z",
+      "uuid": "10ced8bf-7d65-495a-b885-1a9de6daa361",
+      "title": "mathematics",
+      "description": "mathematics test 1",
+      "level": 0
+   }
+},
+{
+   "model": "quiz.exam",
+   "pk": 4,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:35:18.634Z",
+      "update_timestamp": "2023-03-18T14:35:18.634Z",
+      "uuid": "87299189-bab4-47d5-9b99-f50d02e5ad22",
+      "title": "mathematics 2.0",
+      "description": "mathematics test 2",
+      "level": 1
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 4,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:27:07.716Z",
+      "update_timestamp": "2023-03-18T14:32:06.653Z",
+      "exam": 3,
+      "order_num": 1,
+      "text": "1+12",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 5,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:27:07.716Z",
+      "update_timestamp": "2023-03-18T14:31:49.617Z",
+      "exam": 3,
+      "order_num": 2,
+      "text": "2+2",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 6,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:27:07.716Z",
+      "update_timestamp": "2023-03-18T14:31:36.371Z",
+      "exam": 3,
+      "order_num": 3,
+      "text": "2-4",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 7,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:28:07.513Z",
+      "update_timestamp": "2023-03-18T14:31:14.798Z",
+      "exam": 3,
+      "order_num": 4,
+      "text": "3-1",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 8,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:28:07.513Z",
+      "update_timestamp": "2023-03-18T14:30:57.364Z",
+      "exam": 3,
+      "order_num": 5,
+      "text": "2-1",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 9,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:28:07.514Z",
+      "update_timestamp": "2023-03-18T14:30:42.061Z",
+      "exam": 3,
+      "order_num": 6,
+      "text": "4-5",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 10,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:28:07.514Z",
+      "update_timestamp": "2023-03-18T14:30:28.200Z",
+      "exam": 3,
+      "order_num": 7,
+      "text": "5+2",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 11,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:28:07.514Z",
+      "update_timestamp": "2023-03-18T14:30:11.957Z",
+      "exam": 3,
+      "order_num": 8,
+      "text": "5+5",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 12,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:28:07.514Z",
+      "update_timestamp": "2023-03-18T14:29:59.134Z",
+      "exam": 3,
+      "order_num": 9,
+      "text": "5-5",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 13,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:28:07.514Z",
+      "update_timestamp": "2023-03-18T14:29:39.633Z",
+      "exam": 3,
+      "order_num": 10,
+      "text": "10-1",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 14,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:35:18.635Z",
+      "update_timestamp": "2023-03-18T14:39:25.964Z",
+      "exam": 4,
+      "order_num": 1,
+      "text": "35-1",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 15,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:35:18.636Z",
+      "update_timestamp": "2023-03-18T14:39:06.121Z",
+      "exam": 4,
+      "order_num": 2,
+      "text": "3112312-1",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 16,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:35:18.637Z",
+      "update_timestamp": "2023-03-18T14:38:41.694Z",
+      "exam": 4,
+      "order_num": 3,
+      "text": "?-0",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 17,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:35:18.637Z",
+      "update_timestamp": "2023-03-18T14:38:25.198Z",
+      "exam": 4,
+      "order_num": 4,
+      "text": "2-2-2-2-22",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 18,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:35:18.638Z",
+      "update_timestamp": "2023-03-18T14:37:51.683Z",
+      "exam": 4,
+      "order_num": 5,
+      "text": "38-0",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 19,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:35:18.639Z",
+      "update_timestamp": "2023-03-18T14:37:33.202Z",
+      "exam": 4,
+      "order_num": 6,
+      "text": "100-10%",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 20,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:35:18.639Z",
+      "update_timestamp": "2023-03-18T14:37:03.569Z",
+      "exam": 4,
+      "order_num": 7,
+      "text": "2+00",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 21,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:35:18.640Z",
+      "update_timestamp": "2023-03-18T14:36:48.418Z",
+      "exam": 4,
+      "order_num": 8,
+      "text": "p-1",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 22,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:35:18.640Z",
+      "update_timestamp": "2023-03-18T14:36:14.003Z",
+      "exam": 4,
+      "order_num": 9,
+      "text": "23-01",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 23,
+   "fields": {
+      "create_timestamp": "2023-03-18T14:35:18.640Z",
+      "update_timestamp": "2023-03-18T14:35:55.779Z",
+      "exam": 4,
+      "order_num": 10,
+      "text": "77-98",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 1,
+   "fields": {
+      "question": 13,
+      "text": "1",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 2,
+   "fields": {
+      "question": 13,
+      "text": "2",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 3,
+   "fields": {
+      "question": 13,
+      "text": "3",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 4,
+   "fields": {
+      "question": 13,
+      "text": "9",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 5,
+   "fields": {
+      "question": 12,
+      "text": "2",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 6,
+   "fields": {
+      "question": 12,
+      "text": "3",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 7,
+   "fields": {
+      "question": 12,
+      "text": "4",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 8,
+   "fields": {
+      "question": 12,
+      "text": "0",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 9,
+   "fields": {
+      "question": 11,
+      "text": "10",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 10,
+   "fields": {
+      "question": 11,
+      "text": "2",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 11,
+   "fields": {
+      "question": 11,
+      "text": "5",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 12,
+   "fields": {
+      "question": 11,
+      "text": "232",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 13,
+   "fields": {
+      "question": 10,
+      "text": "2",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 14,
+   "fields": {
+      "question": 10,
+      "text": "6",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 15,
+   "fields": {
+      "question": 10,
+      "text": "7",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 16,
+   "fields": {
+      "question": 10,
+      "text": "23",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 17,
+   "fields": {
+      "question": 9,
+      "text": "2",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 18,
+   "fields": {
+      "question": 9,
+      "text": "3",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 19,
+   "fields": {
+      "question": 9,
+      "text": "-1",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 20,
+   "fields": {
+      "question": 9,
+      "text": "3",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 21,
+   "fields": {
+      "question": 8,
+      "text": "2",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 22,
+   "fields": {
+      "question": 8,
+      "text": "-23",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 23,
+   "fields": {
+      "question": 8,
+      "text": "-1",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 24,
+   "fields": {
+      "question": 8,
+      "text": "1",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 25,
+   "fields": {
+      "question": 7,
+      "text": "2",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 26,
+   "fields": {
+      "question": 7,
+      "text": "-23",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 27,
+   "fields": {
+      "question": 7,
+      "text": "-1",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 28,
+   "fields": {
+      "question": 7,
+      "text": "23",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 29,
+   "fields": {
+      "question": 6,
+      "text": "1",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 30,
+   "fields": {
+      "question": 6,
+      "text": "-23",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 31,
+   "fields": {
+      "question": 6,
+      "text": "5",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 32,
+   "fields": {
+      "question": 6,
+      "text": "-2",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 33,
+   "fields": {
+      "question": 5,
+      "text": "2",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 34,
+   "fields": {
+      "question": 5,
+      "text": "3",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 35,
+   "fields": {
+      "question": 5,
+      "text": "4",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 36,
+   "fields": {
+      "question": 5,
+      "text": "5",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 37,
+   "fields": {
+      "question": 4,
+      "text": "13",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 38,
+   "fields": {
+      "question": 4,
+      "text": "12",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 39,
+   "fields": {
+      "question": 4,
+      "text": "123",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 40,
+   "fields": {
+      "question": 4,
+      "text": "12312412",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 41,
+   "fields": {
+      "question": 23,
+      "text": "-21",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 42,
+   "fields": {
+      "question": 23,
+      "text": "3",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 43,
+   "fields": {
+      "question": 23,
+      "text": "00",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 44,
+   "fields": {
+      "question": 22,
+      "text": "22",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 45,
+   "fields": {
+      "question": 22,
+      "text": "222",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 46,
+   "fields": {
+      "question": 22,
+      "text": "022",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 47,
+   "fields": {
+      "question": 21,
+      "text": "3,1415926535",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 48,
+   "fields": {
+      "question": 21,
+      "text": "0,1415926535",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 49,
+   "fields": {
+      "question": 21,
+      "text": "2,1415926535",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 50,
+   "fields": {
+      "question": 20,
+      "text": "2",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 51,
+   "fields": {
+      "question": 20,
+      "text": "2000",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 52,
+   "fields": {
+      "question": 20,
+      "text": "200",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 53,
+   "fields": {
+      "question": 19,
+      "text": "90",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 54,
+   "fields": {
+      "question": 19,
+      "text": "10",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 55,
+   "fields": {
+      "question": 19,
+      "text": "99",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 56,
+   "fields": {
+      "question": 18,
+      "text": "38",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 57,
+   "fields": {
+      "question": 18,
+      "text": "38",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 58,
+   "fields": {
+      "question": 18,
+      "text": "39",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 59,
+   "fields": {
+      "question": 17,
+      "text": "2-2-2",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 60,
+   "fields": {
+      "question": 17,
+      "text": "-26",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 61,
+   "fields": {
+      "question": 17,
+      "text": "2?",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 62,
+   "fields": {
+      "question": 16,
+      "text": "?",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 63,
+   "fields": {
+      "question": 16,
+      "text": "?",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 64,
+   "fields": {
+      "question": 16,
+      "text": "?-0",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 65,
+   "fields": {
+      "question": 15,
+      "text": "3112311",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 66,
+   "fields": {
+      "question": 15,
+      "text": "311231131123113112311",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 67,
+   "fields": {
+      "question": 15,
+      "text": "3112312",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 68,
+   "fields": {
+      "question": 14,
+      "text": "0",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 69,
+   "fields": {
+      "question": 14,
+      "text": "0,1415926535",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 70,
+   "fields": {
+      "question": 14,
+      "text": "34",
+      "is_correct": true
+   }
+}
+]
