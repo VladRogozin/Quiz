@@ -22,5 +22,3 @@ def expression(value, *args):
 """
 
 register.simple_tag(func=expression, name='expression')
-
-
