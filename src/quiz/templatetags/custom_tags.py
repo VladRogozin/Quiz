@@ -9,6 +9,7 @@ def expression(value, *args):
         value = value.replace(f'%{idx}', str(arg))
     return eval(value)
 
+
 # {% expression '(%1 - 1) * 100 // %2' 23 56 as progress_level %}
 
 
@@ -21,3 +22,5 @@ def expression(value, *args):
 """
 
 register.simple_tag(func=expression, name='expression')
+
+

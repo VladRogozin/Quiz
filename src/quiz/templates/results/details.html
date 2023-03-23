@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load custom_filters %}
+
 {% block title %}
     Результат теста
 {% endblock %}
@@ -33,7 +35,18 @@
                         </tr>
                         <tr>
                             <td>Result</td>
-                            <td>{{ result.num_correct_answers }} / {{ result.num_incorrect_answers }}</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar"
+                                         style="width: {{ result.num_incorrect_answers|arr:result.num_correct_answers }}%;"
+                                         aria-valuenow="0"
+                                         aria-valuemin="0" aria-valuemax="100">{{ result.num_incorrect_answers|arr:result.num_correct_answers }}%</div>
+                                    <div class="progress-bar bg-warning" role="progressbar"
+                                         style="width: {{ result.num_correct_answers|arr:result.num_incorrect_answers  }}%;"
+                                         aria-valuenow="0"
+                                         aria-valuemin="0" aria-valuemax="100">{{ result.num_correct_answers|arr:result.num_incorrect_answers  }}%</div>
+                                </div>
+                            </td>
                         </tr>
                     </tbody>
               </table>

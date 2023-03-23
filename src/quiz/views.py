@@ -2,6 +2,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
+from django.urls import reverse_lazy
 from django.views.generic import CreateView, DeleteView
 from django.views.generic import DetailView
 from django.views.generic import ListView
@@ -154,4 +155,9 @@ class ExamResultUpdateView(LoginRequiredMixin, UpdateView):
 
 
 class ExamResultDeleteView(LoginRequiredMixin, DeleteView):
-    pass
+    model = Result
+    success_url = reverse_lazy('quiz:list')
+    template_name = 'exams/delete.html'
+
+    def get_object(self, queryset=None):
+        return self.model.objects.get(uuid=self.kwargs['res_uuid'])
