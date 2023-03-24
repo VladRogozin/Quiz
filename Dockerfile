@@ -16,7 +16,6 @@ RUN pip install --upgrade pip && \
     rm -f requirements.txt
 
 COPY src .
-# COPY .env_prod ../.env
 
 EXPOSE 8890
 
