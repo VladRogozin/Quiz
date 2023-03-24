@@ -135,7 +135,23 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 if DEBUG:
-    SHELL_PLUS_PRINT_SQL = True
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / '../db.sqlite3',
+        }
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'HOST': getenv('POSTGRES_HOST'),
+            'PORT': getenv('POSTGRES_PORT'),
+            'NAME': getenv('POSTGRES_DB'),
+            'USER': getenv('POSTGRES_USER'),
+            'PASSWORD': getenv('POSTGRES_PASSWORD'),
+        }
+    }
 
 AUTH_USER_MODEL = 'accounts.User'
 
