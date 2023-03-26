@@ -63,3 +63,4 @@ class TestViews(TestCase):
         """Homework test"""
         response = self.client.get(reverse('accounts:register'))
         self.assertEqual(response.status_code, 200)
+
