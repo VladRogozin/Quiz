@@ -2,8 +2,8 @@ version: "2.3"
 
 services:
   web:
-    build: .
     container_name: web
+    image: vladrogozin/web:0.0.1
     command: gunicorn core.wsgi:application --workers 4 --bind 0.0.0.0:8890
     volumes:
       - static_volume:/opt/src/static
@@ -21,8 +21,8 @@ services:
     restart: always
 
   db:
-    build: ./postgres
     container_name: db
+    image: vladrogozin/db:0.0.1
     volumes:
       - db_data_volume:/var/lib/postgresql/data/
     env_file:
@@ -35,8 +35,8 @@ services:
     restart: always
 
   nginx:
-    build: ./nginx
     container_name: nginx
+    image: vladrogozin/nginx:0.0.1
     volumes:
       - static_volume:/opt/src/static
       - media_volume:/opt/src/media
