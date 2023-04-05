@@ -11,7 +11,7 @@ from quiz.models import Result
 
 
 class Command(BaseCommand):
-    help = "Send Today's Report to Admins"
+    helps = "Send Today's Report to Admins"
 
     def handle(self, *args, **options):
         start = make_aware(datetime.combine(timezone.now(), time()))
