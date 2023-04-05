@@ -4,6 +4,7 @@ from django.core.mail import mail_admins
 from django.core.management import BaseCommand
 from django.utils import timezone
 from django.utils.timezone import make_aware
+
 from prettytable import PrettyTable
 
 from quiz.models import Result
