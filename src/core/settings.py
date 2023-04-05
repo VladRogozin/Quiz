@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from os import getenv
 from pathlib import Path
 
+from celery.schedules import crontab
 from django.urls import reverse_lazy
 
 from dotenv import load_dotenv
@@ -159,7 +160,22 @@ AUTH_USER_MODEL = 'accounts.User'
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-EMAIL_PORT = 1025
-
 LOGIN_REDIRECT_URL = reverse_lazy('index')
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+SERVER_EMAIL = 'noreply@test.com'
+ADMINS = [('admin', 'admin@test.com'), ('user', 'user@test.com')]
+EMAIL_SUBJECT_PREFIX = '[QUIZ] '
+
+CELERY_BROKER_URL = getenv('CELERY_BROKER')
+
+CELERY_BEAT_SCHEDULE = {
+    'simple_task': {
+        'task': 'quiz.my_tasks.simple_task',
+        'schedule': crontab(minute='*/1')
+    },
+    'send_email_report': {
+        'task': 'quiz.my_tasks.send_email_report',
+        'schedule': crontab(minute='*/2')
+    }
+}
