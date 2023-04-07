@@ -32,4 +32,3 @@ class Command(BaseCommand):
                 self.stdout.write("The report was sent by the admin's email.")
         else:
             self.stdout.write("Nothing to send.")
-
