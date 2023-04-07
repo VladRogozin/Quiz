@@ -178,5 +178,9 @@ CELERY_BEAT_SCHEDULE = {
     'send_email_report': {
         'task': 'quiz.my_tasks.send_email_report',
         'schedule': crontab(minute='*/2')
+    },
+    'test_failure': {
+        'task': 'quiz.my_tasks.test_failure',
+        'schedule': crontab(minute='*/1')
     }
 }
