@@ -14,3 +14,9 @@ def simple_task():
 @shared_task
 def send_email_report():
     call_command('send_report')
+
+
+@shared_task
+def test_failure():
+    logger.info('>>> TEST RUN <<<')
+    call_command('test_failure_report')
