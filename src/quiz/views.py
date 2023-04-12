@@ -3,12 +3,13 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
 from django.urls import reverse_lazy
+from django.core.cache import cache
 from django.views.generic import CreateView, DeleteView
 from django.views.generic import DetailView
 from django.views.generic import ListView
 from django.views.generic import UpdateView
 from django.views.generic.list import MultipleObjectMixin
-from django.core.cache import cache
+
 
 from .forms import ChoicesFormSet
 from .models import Exam
@@ -80,7 +81,7 @@ class ExamResultQuestionView(LoginRequiredMixin, UpdateView):
     def get_question(self, uuid, order_number):
         question = cache.get('question')
         if not question:
-            question= Question.objects.get(
+            question = Question.objects.get(
                 exam__uuid=uuid,
                 order_num=order_number
             )
